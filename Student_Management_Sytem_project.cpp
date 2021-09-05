@@ -91,7 +91,7 @@ void Student::menu() //Project Menu
             Sleep(10);
             exit(0);
         default:
-            cout << "\n\n\t\t\t Invalid Choice... Please Try Again...\n";
+            cout << "\n\n\t\t\t Invalid Choice... Please Try Again...Press any key to get back to menu.\n";
         }
         getch();
     }
