@@ -1,4 +1,4 @@
-//STUDENT MANAGEMENT SYSTEM by Dishant Kumar Samal
+//UNIVERSITY MANAGEMENT SYSTEM by Dishant Kumar Samal
 //Run the output in full screen or open the .exe file in full screen after compilation.
 
 #include <iostream>
