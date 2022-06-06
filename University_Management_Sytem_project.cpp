@@ -46,9 +46,9 @@ void Student::menu() //Project Menu
         int choice;
         char x; // Options to choose an action
         system("cls");
-        cout << "\n\t\t\t\t\t===============================" << endl;
-        cout << "\t\t\t\t\t>> STUDENT MANAGEMENT SYSTEM <<" << endl;
-        cout << "\t\t\t\t\t===============================" << endl;
+        cout << "\n\t\t\t\t\t================================" << endl;
+        cout << "\t\t\t\t\t>> UNIVERSITY MANAGEMENT SYSTEM <<" << endl;
+        cout << "\t\t\t\t\t=================================" << endl;
         cout << "\t\t\t\t\t 1. Enter New Record" << endl;
         cout << "\t\t\t\t\t 2. Display Record" << endl;
         cout << "\t\t\t\t\t 3. Modify Record" << endl;
@@ -215,7 +215,7 @@ void Student::modify() // Modify data of User
                 cin >> last_name;
                 cout << "\n Enter Student Roll No. [MAX 100]: ";
                 cin >> Roll_number;
-                cout << "\n Enter Course(Science/Commerce/Arts): ";
+                cout << "\n Enter Course : ";
                 cin >> Course;
                 cout << "\n Enter Student Gender(Male/Female/Others): ";
                 cin >> gender;
@@ -285,7 +285,7 @@ void Student::search() // Search student Data
                 cout << "\n---------------------\n";
                 cout << "Student Name: " << first_name << " " << last_name << "\n";
                 cout << "Student Roll No.: " << Roll_number << "\n";
-                cout << "Course(Science/Commerce/Arts): " << Course << "\n";
+                cout << "Course: " << Course << "\n";
                 cout << "Student Gender(Male/Female/Others): " << gender << "\n";
                 cout << "Student Age: " << age << "\n";
                 cout << "Student Total Marks(/500): " << total_marks<<endl ;
@@ -369,9 +369,9 @@ int password_user() //Admin Authentication
     fstream file;
     char ch;
     system("cls");
-    cout << "\n\t\t\t============================================";
-    cout << "\n\t\t\t||  WELCOME TO STUDENT MANAGEMENT SYSTEM  ||";
-    cout << "\n\t\t\t============================================";
+    cout << "\n\t\t\t==============================================";
+    cout << "\n\t\t\t||  WELCOME TO UNIVERSITY MANAGEMENT SYSTEM  ||";
+    cout << "\n\t\t\t==============================================";
     cout << "\n\n\t\t\t   <| Press: [1] Register & [2] Login  |>";
     int selection;
     cout << "\n\nPlease Enter Value: ";
@@ -397,7 +397,7 @@ int password_user() //Admin Authentication
         file.open("u_data.txt", ios::app);
         file << " " << name_reg << " " << pass_reg << "\n";
         file.close();
-        cout << "\nRegistration Succesfully save";
+        cout << "\nRegistration Succesfully save, press any key ";
         getch();
         password_user();
     }
